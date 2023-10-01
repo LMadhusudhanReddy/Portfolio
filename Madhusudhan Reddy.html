@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap 
+    <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="user.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- for github Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /* Custom CSS to justify text within the jumbotron */
+        .al {
+            text-align: justify;
+            background-color: #00ffa6;
+        }
+        .equal-height {
+            display: flex;
+            align-items: stretch;
+        }
+        .custom-image {
+            height: 300px;
+            width: 300px; /* Set your desired maximum height here */
+        }
+        .custom-image1 {
+            height: 200px;
+            width: 200px; /* Set your desired maximum height here */
+        }
+        .jumb{
+            margin-bottom: 15px;
+            font-size: 21px;
+            font-weight: 200;
+            text-align: justify;
+        }
+        .obj{
+            font-size:20px;
+            font-weight: 200;
+            text-align: justify;
+        }
+        .custom-progress-bar {
+        background-color: #f36d00; /* Set your desired color here */
+        color: white; /* Text color */
+        }
+        .custom-well h1 {
+            background-color: #f5f5f5; /* Change background color if needed */
+            color:  #f36d00; /* Change text color if needed */
+            font-size:30px;
+            font-weight:300; /* Change font size to your desired value */
+        }
+        .custom-well p {
+            background-color: #f5f5f5; /* Change background color if needed */
+            color:  #f36d00; /* Change text color if needed */
+            font-size:30px;
+            font-weight:300; /* Change font size to your desired value */
+        }
+        .custom-well{
+            padding: 5px;
+        }
+        .list-item-with-sides {
+            display: flex;
+            justify-content: space-between;
+        }
+        .custom-text-box {
+            padding: 15px;
+            border: 3px solid #f5f5f5;
+            background-color: #f5f5f5;
+            color: #f36d00;
+        }
+        .markstext{
+            color:#f36d00;
+            font-size: 15px;
+            float: left;
+        }
+        .markstext1{
+            color:#f36d00;
+            font-size: 15px;
+            float:right;
+        }
+        .custom-button {
+            background-color: #f36d00;
+            width: 130px; /* Adjust the width as needed */
+        }
+        .cj {
+            padding: 15px;
+            background-color: #e3e0e0;
+          /* Adjust the width as per your requirement */
+            max-width: 600px; /* Set a maximum width to control responsiveness */
+            height:fit-content; /* Maintain aspect ratio for responsiveness */ /* Adjust the margin as needed */
+             /* You can adjust the padding value as needed */
+        }
+        .custom-icon {
+            margin-right: 10px;
+            color: #100b06;
+            font-size: 28px; /* Adjust the size as needed */
+        }
+        .navbar-nav > li {
+            margin-right: 20px; /* Adjust the margin as needed */
+        }
+    </style>
+  </head>
+  <body style="background-color: #f5af76;">
+   <br><br><br><br>
+   <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #383535;">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about"><b style="color: #f36d00;">About Me</b></a></li>
+                <li><a href="#skills"><b style="color: #f36d00;">Skills</b></a></li>
+                <li><a href="#education"><b style="color: #f36d00;">Education</b></a></li>
+                <li><a href="#contact"><b style="color: #f36d00;">Contact</b></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+</nav>
+   <div class="container">
+    <div class="row">
+        <div class="col-md-8">
+        <p class="obj">
+            Hello..,<span style="color:#100b06;font-size: 30px;">I AM </span><span style="color:#f36d00;font-size: 30px;">MADHUSUDHAN REDDY L</span>,<br> Computer Science Student and I'm on a perpetual quest for knowledge.
+             I believe that learning is not just about acquiring skills but using those skills to tackle real-world challenges. 
+             I'm passionate about applying my ever-expanding toolkit to make a positive impact and find innovative solutions to 
+             the problems that matter most.
+        </p>
+       </div>
+       <div class="col-sm-4">
+        <div class="card image-frame mx-auto mt-5 f1">
+            <img src="round.jpg" class="img-fluid custom-image1 img-circle" alt="Image Description">
+            <!-- You can add additional content or text here if needed -->
+        </div>
+    </div>
+    </div> 
+   </div>
+   <br>
+
+    <div class="container" id="about">
+        <h1><b>About Me</b></h1><br>
+        <div class="row">
+            <div class="col-sm-4 text-left">
+                <div class="card image-frame mx-auto mt-5 f1">
+                    <img src="madhu1.jpg" class="img-fluid custom-image img-rounded" alt="Image Description">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="jumb">
+                    
+                    <br>
+                    <p>I'm a Computer Science Graduate Student with a passion for technology, problem-solving, Adaptable and Enthusiastic Student. 
+                        I specialize in programming,Web development technologies, and SQL.
+                        I thrive in collaborative environments and aim to make a meaningful impact in the field of computer science through continuous learning and innovative solutions.
+                    </p>
+                    <div>
+                        <!-- Left Side Text -->
+                        <span style="color: #f36d00;float: left;">Age:</span>22
+                        <!-- Right Side Text -->
+                        <span style="float: right;"> Male</span><span style="color: #f36d00;float: right;">Gender: </span> 
+                        <br>
+                        <span style="color: #f36d00;float: left;">Language:</span>Telugu, English
+                        <!-- Right Side Text -->
+                        <span style="float: right;">India</span><span style="color: #f36d00;float: right;">country: </span>
+                        <br>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container" id="skills">
+        <h1 style="color:#f36d00;font-size: 30px;"><b> MY SKILLS</b></h1>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Python</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                      90%
+                    </div>
+                </div>
+                <p>Django</p>
+                <div class="progress">
+                    <div class="progress-bar custom-progress-bar progress-bar-striped active" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                      70%
+                    </div>
+                </div>
+                <p>Java</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                      90%
+                    </div>
+                </div>
+                <p>C</p>
+                <div class="progress">
+                    <div class="progress-bar bg-success progress-bar-striped active" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                      80%
+                    </div>
+                </div>
+                <p>HTML5</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                      90%
+                    </div>
+                </div>
+                <p>CSS3</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                      90%
+                    </div>
+                </div>
+                <p>BootStrap3</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                      aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                        90%
+                    </div>
+                </div>
+                <p>SQL</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                      90%
+                    </div>
+                </div>
+                <p>JavaScript</p>
+                <div class="progress">
+                    <div class="progress-bar custom-progress-bar progress-bar-striped active" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                      70%
+                    </div>
+                </div>
+                <p>Data Structures</p>
+                <div class="progress">
+                    <div class="progress-bar custom-progress-bar progress-bar-striped active" role="progressbar"
+                      aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                        70%
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-md-offset-1 col-md-3">
+                            <div class="well text-center custom-well active">
+                                <h1>Projects >></h1>
+                                <p>2</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="well text-center custom-well">
+                                <h1>Certificates >></h1>
+                                <h1>10+</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-2 col-md-4">
+                            <div class="well text-center custom-well">
+                                <h1>Virtual Internships & Trainings >></h1>
+                                <h1>3</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container" id="education">
+        <h1 style="color:#f36d00;font-size: 30px;"><b>Education Details</b></h1>
+        <div class="row">
+            <div class="col-md-10">
+                <ul class="list-group">
+                    <li class="list-group-item list-item-with-sides">
+                        <a data-toggle="collapse" data-toggle="collapse" data-target="#id1" ><span style="font-size: 20px;">Bachelors Degree</span></a>
+                        <a data-toggle="collapse" data-toggle="collapse" data-target="#id1" >
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                        <!--<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> -->
+                    </li>
+
+                    <div id="id1" class="collapse custom-text-box">
+                        <div class="text-center">
+                            <!-- Left Side Text -->
+                            <span class="markstext">Bachelor of Technology (Computer Science and Engineering)</span>
+                            <!-- Right Side Text -->
+                            <span class="markstext1">2021-2023</span>
+                            <br><br>
+                            <span class="markstext">Srinivasa Ramanujan Institute of Technology</span>
+                            <!-- Right Side Text -->
+                            <span class="markstext1">Anantapur, AndhraPradesh</span>
+                            <br><br>
+                            <p class="markstext">CGPA : <span class="badge"> 9.10</span></p>
+                            <br>
+                        </div>     
+                    </div>
+
+                    <li class="list-group-item list-item-with-sides">
+                        <a data-toggle="collapse" data-toggle="collapse" data-target="#id2" ><span style="font-size: 20px;">Intermediate</span></a>
+                        <a data-toggle="collapse" data-toggle="collapse" data-target="#id2" >
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <div id="id2" class="collapse custom-text-box">
+                        <div class="text-center">
+                            <!-- Left Side Text -->
+                            <span class="markstext">SreeGeetham Junior College</span>
+                            <!-- Right Side Text -->
+                            <span class="markstext1">2017-2019</span>
+                            <br><br>
+                            <p class="markstext">CGPA : <span class="badge"> 9.92</span></p>
+                            <!-- Right Side Text -->
+                            <span class="markstext1">Anantapur, AndhraPradesh</span>
+                            <br>
+                        </div>     
+                    </div>
+                    <li class="list-group-item list-item-with-sides">
+                        <a data-toggle="collapse" data-toggle="collapse" data-target="#id3" ><span style="font-size: 20px;">SSC</span></a>
+                        <a data-toggle="collapse" data-toggle="collapse" data-target="#id3" >
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <div id="id3" class="collapse custom-text-box">
+                        <div class="text-center">
+                            <!-- Left Side Text -->
+                            <span class="markstext">Zilla Parishad High School</span>
+                            <!-- Right Side Text -->
+                            <span class="markstext1">2016-2017</span>
+                            <br><br>
+                            <p class="markstext">CGPA : <span class="badge"> 8.7</span></p>
+                            <!-- Right Side Text -->
+                            <span class="markstext1">Kuntimadhhi,Anantapur</span>
+                            <br>
+                        </div>     
+                    </div>
+                
+                </ul>
+            </div>
+        </div>          
+    </div>
+    <div class="container">
+        <h1 style="color:#f36d00;font-size: 30px;"><b> RESUME</b></h1>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-6"> 
+                <a href="https://drive.google.com/file/d/1RLGGa2qRoSqQ8Cgm0PX1gEf-lI_TDG-L/view?usp=drivesdk" target="_blank" class="btn btn-primary custom-button">To View</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <h1 style="color:#f36d00;font-size: 30px;"><b>Achievements</b></h1>
+        <br>
+        <div class="row">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color:#f36d00">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="jumbotron text-center" style="background-color: #f36d00;">
+                        <p>Earned Honors degree certificate, reflecting exceptional <br>dedication to a academic excellence.</p>
+                    </div>
+                  </div>
+            
+                  <div class="item">
+                    <div class="jumbotron text-center" style="background-color: #f36d00;">
+                        <p>Attained a Prestigious 5-star rating for Python (Basics),<br> Problem Solving (Basics), SQL on Hacker Rank.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="jumbotron text-center" style="background-color: #f36d00;">
+                        <p>Completed Courses on HTML5, CSS3, Basics of Java Script, <br>Bootstrap for Beginners, Django Framework through Coursera.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="jumbotron text-center" style="background-color: #f36d00;">
+                        <p>Completed courses on Cloud Computing, Data Science for Engineers <br>through NPTEL.</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="container" id="contact">
+        <h1 style="color:#f36d00;font-size: 30px;"><b>Contact <span style="color: #100b06;">Details</span></b></h1>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="jumbotron cj">
+                    <div class="text-center">
+                        <p class="glyphicon glyphicon-earphone" style="color: #f36d00;"></p> 
+                        <p style="color: #fa8108;">9177354706</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="jumbotron cj">
+                    <div class="text-center">
+                        <p class="glyphicon glyphicon-envelope" style="color: #f36d00;"></p> 
+                        <p style="color: #fa8108;">lmadhu2002pnb@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="jumbotron cj">
+                    <div class="text-center">
+                        <p class="glyphicon glyphicon-map-marker" style="color: #f36d00;"></p> 
+                    </div>
+                        <p style="color: #fa8108;" class="lead">Penunubolu(V),Sathya Sai(D)</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="https://api.whatsapp.com/send?phone=9177354706&text=Hello..,Madhusudhan Reddy" class="btn btn-success" st>
+                    Click to Connect on whatsapp</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="text-center">
+        <div class="flex">
+            <a href="https://www.linkedin.com/in/madhusudhan-reddy-l-170a97246/" target="_blank"><i class="fa fa-linkedin custom-icon" ></i></a>
+            <a href="https://www.hackerrank.com/madhu6434amma" target="_blank"><i class="fa fa-fire custom-icon" ></i></a>
+            <a href="https://github.com/LMadhusudhanReddy" target="_blank"><i class="fa fa-github custom-icon" ></i></a>
+        </div>
+    </div>
+    <br><br><br>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap3/js/bootstrap.min.js"></script>
+  </body>
+</html> 
